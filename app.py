@@ -23,6 +23,7 @@ def index():
         elif request.json:
             y_pred = prediction.api_response(request)
             return jsonify(y_pred)
+        
         """except Exception as e:
             print(e)
             error = {"error": "Something Went Wrong!!"}
